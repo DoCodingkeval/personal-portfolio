@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: monolisa;
+  src: url('/public/MonoLisa-Regular.ttf');
+}
+
+@theme {
+  --animate-brace: animate-brace 0.4s infinite alternate linear;
+  @keyframes animate-brace {
+    to {
+      scale: 1.2;
+      opacity: 0.5;
+    }
+  }
+}
+
+.animate-brace:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+:root {
+  --text-blue: #4d5bce;
+  --text-gray: #607b96;
+  --text-green: #60e6d6;
+  --text-ofred: #e99287;
+  --text-white: #e5e9f0;
+  --border-primary: #1e2d3d;
+  --text-light-gray: #7e8da4;
+  --card-link: #45556c;
+}
+
+body {
+  background-color: #0f172a;
+  font-family: monolisa;
+}
+
+.skills__img > img {
+  width: 25%;
+  object-fit: cover;
+}
+
+.waving-hand {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wavingHand 2.5s infinite;
+}
+
+@keyframes wavingHand {
+  0% {
+    rotate: 0deg;
+  }
+  15% {
+    rotate: 14deg;
+  }
+  30% {
+    rotate: -8deg;
+  }
+  40% {
+    rotate: 14deg;
+  }
+  50% {
+    rotate: -4deg;
+  }
+  60% {
+    rotate: 10deg;
+  }
+  70% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.active-link {
+  color: #fff;
+  border-bottom: 4px solid #ffb86a;
+}
