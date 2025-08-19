@@ -19,8 +19,7 @@ const Sidebar = ({ setActiveView }) => {
       <a href="#" className="py-4 pl-4 lg:hidden">
         _about-me
       </a>
-      <a
-        href="#"
+      <button
         onClick={() => setInfo(!info)}
         className="flex items-center gap-2 bg-[#314158] py-3.5 pl-4 lg:border-b-2 lg:border-[#1e2d3d] lg:bg-transparent"
       >
@@ -30,7 +29,7 @@ const Sidebar = ({ setActiveView }) => {
           <IconCaretRightFilled size={15} />
         )}
         personal-info
-      </a>
+      </button>
       {info && (
         <ul className="flex cursor-pointer flex-col gap-2 py-4 pl-4 text-sm">
           {/* 
