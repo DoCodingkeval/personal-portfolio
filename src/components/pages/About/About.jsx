@@ -15,7 +15,9 @@ const About = () => {
         {activeView && (
           <div className="absolute top-0 w-full lg:top-13">
             <div className="flex h-9 w-34 cursor-pointer items-center justify-between border-t-2 border-r-2 border-[var(--border-primary)] pr-2 pl-5">
-              <span className="text-xs">{activeView}</span>
+              <span className="text-xs select-none lg:text-lg">
+                {activeView}
+              </span>
               <IconX
                 size={16}
                 onClick={() => setActiveView(null)}

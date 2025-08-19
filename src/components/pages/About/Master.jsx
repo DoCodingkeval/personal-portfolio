@@ -1,9 +1,6 @@
-import { IconX } from '@tabler/icons-react';
-import React from 'react';
-
 const Master = () => {
   return (
-    <div className="h-full w-full p-4 pt-12 text-xs leading-relaxed text-[var(--text-light-gray)] xl:text-lg">
+    <div className="h-full w-full p-4 pt-12 text-xs leading-relaxed tracking-wider text-[var(--text-light-gray)] selection:bg-zinc-600 xl:text-lg">
       <ul className="list-inside list-decimal">
         <li>/**</li>
         <li>* Lj University, Ahmedabad</li>

@@ -105,7 +105,7 @@ const ContactForm = () => {
       <input
         type="submit"
         value="submit-message"
-        className="mt-3.5 cursor-pointer rounded-lg border bg-[var(--border-primary)] p-3 text-sm transition-all duration-300 hover:translate-y-1 hover:scale-[1.05] hover:bg-[#00f0ff] hover:text-[#0b1622] hover:shadow-[0_0_15px_#00f0ff]"
+        className="mt-3.5 cursor-pointer rounded-lg border bg-[var(--border-primary)] p-3 text-sm font-semibold tracking-widest uppercase transition-all duration-300 hover:translate-y-1 hover:scale-[1.05] hover:bg-[#00f0ff] hover:text-[#0b1622] hover:shadow-[0_0_15px_#00f0ff]"
       />
     </form>
   );

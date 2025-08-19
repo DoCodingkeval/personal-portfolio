@@ -1,8 +1,13 @@
 @import 'tailwindcss';
 
 @font-face {
-  font-family: monolisa;
-  src: url('/public/MonoLisa-Regular.ttf');
+  font-family: code;
+  src: url('/public/78eIWPjIUuxD5N6GQVQ2SmpAyA.woff2');
+}
+
+@font-face {
+  font-family: secondary;
+  src: url('/public/secondary.woff2');
 }
 
 @theme {
@@ -32,7 +37,8 @@
 
 body {
   background-color: #0f172a;
-  font-family: monolisa;
+  font-family: code;
+  letter-spacing: 0.025em;
 }
 
 .skills__img > img {

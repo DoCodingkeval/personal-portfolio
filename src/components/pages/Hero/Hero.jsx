@@ -18,19 +18,24 @@ const Hero = () => {
         className="h-max w-full px-4 pt-20 text-[var(--text-white)]"
       >
         <span>Hi, all. I am</span>
-        <h1 className="text-4xl leading-15 tracking-tighter text-[var(--text-green)] select-none sm:text-6xl xl:text-7xl">
+        <h1 className="text-4xl leading-15 tracking-wide text-[var(--text-green)] select-none sm:text-6xl xl:text-7xl">
           Keval Gohel <span className="waving-hand">👋</span>
         </h1>
-        <span className="block pt-4 text-xl text-[var(--text-blue)] sm:text-[22px]">{`> Front-end developer`}</span>
+        <span className="block pt-4 text-xl tracking-wide text-[var(--text-blue)] sm:text-[22px]">{`> Front-end developer`}</span>
         <div className="flex flex-col flex-wrap gap-2 pt-4 text-sm text-[var(--text-gray)] sm:text-[1rem] xl:pt-10">
           <span>// find my profile on Github:</span>
           <p className="flex flex-wrap gap-x-2 pr-3">
-            <span className="text-[var(--text-blue)]">const</span>{' '}
-            <span className="text-[var(--text-green)]">githubLink</span> =
+            <span className="tracking-wider text-[var(--text-blue)]">
+              const
+            </span>{' '}
+            <span className="tracking-wider text-[var(--text-green)]">
+              githubLink
+            </span>{' '}
+            =
             <a
               href="https://github.com/DoCodingkeval"
               target="_blank"
-              className="text-[var(--text-ofred)] transition duration-300 hover:translate-y-1"
+              className="tracking-widest text-[var(--text-ofred)] transition duration-300 hover:translate-y-1"
             >{`"https://github.com/DoCodingkeval"`}</a>
           </p>
         </div>

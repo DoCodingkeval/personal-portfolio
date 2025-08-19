@@ -15,14 +15,14 @@ const ProjectCards = () => {
                   alt="image"
                   className="border-b border-[var(--border-primary)] object-cover"
                 />
-                <p className="m-4 text-sm tracking-tighter text-[#738198] xl:text-lg">
+                <p className="m-4 font-[secondary] text-sm tracking-normal text-[#738198] xl:text-lg">
                   {item.info}
                 </p>
                 <div className="mx-4 mb-6 flex items-center">
                   <a
                     href={item.livelink}
                     target="_blank"
-                    className="w-max rounded-lg bg-[#1b263b] p-2 px-4 text-sm transition-all duration-300 hover:bg-[#00f0ff] hover:text-[#0d1b2a] hover:shadow-[0_0_15px_#00f0ff]"
+                    className="w-max rounded-lg bg-[#1b263b] p-2 px-4 text-sm font-medium tracking-widest uppercase transition-all duration-300 hover:bg-[#00f0ff] hover:text-[#0d1b2a] hover:shadow-[0_0_15px_#00f0ff]"
                   >
                     view-project
                   </a>

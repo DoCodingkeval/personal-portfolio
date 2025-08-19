@@ -23,8 +23,8 @@ const Content = () => {
             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
             <CoderRoomCamera isMobile={isMobile}>
               <CoderRoom
-                scale={isLarge ? 0.07 : 0.13}
-                position={isLarge ? [0, -4, 0] : [0.5, -10, 0]}
+                scale={isLarge ? 0.1 : 0.13}
+                position={isLarge ? [0, -4.7, 0] : [0.5, -10, 0]}
                 rotation={[0.1, -Math.PI, 0]}
               />
             </CoderRoomCamera>

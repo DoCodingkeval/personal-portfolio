@@ -21,7 +21,7 @@ const Sidebar = ({ setActiveView }) => {
       </a>
       <button
         onClick={() => setInfo(!info)}
-        className="flex items-center gap-2 bg-[#314158] py-3.5 pl-4 lg:border-b-2 lg:border-[#1e2d3d] lg:bg-transparent"
+        className="flex cursor-pointer items-center gap-2 bg-[#314158] py-3.5 pl-4 lg:border-b-2 lg:border-[#1e2d3d] lg:bg-transparent"
       >
         {info ? (
           <IconCaretDownFilled size={15} />
@@ -31,7 +31,7 @@ const Sidebar = ({ setActiveView }) => {
         personal-info
       </button>
       {info && (
-        <ul className="flex cursor-pointer flex-col gap-2 py-4 pl-4 text-sm">
+        <ul className="flex cursor-pointer flex-col gap-2 py-4 pl-4 text-sm select-none lg:text-lg">
           {/* 
           <li className="flex items-center gap-2">
             <IconChevronRight size={13} />
@@ -77,13 +77,12 @@ const Sidebar = ({ setActiveView }) => {
           )}
         </ul>
       )}
-      <a
-        href="#"
+      <button
         onClick={() => {
           setActiveView('Hobbies');
           setHobbiesOpen(!hobbiesOpen);
         }}
-        className="flex items-center gap-1 bg-[#314158] py-3.5 pl-4 lg:border-b-2 lg:border-[#1e2d3d] lg:bg-transparent"
+        className="flex cursor-pointer items-center gap-1 bg-[#314158] py-3.5 pl-4 lg:border-b-2 lg:border-[#1e2d3d] lg:bg-transparent"
       >
         {hobbiesOpen ? (
           <IconCaretDownFilled size={15} />
@@ -91,7 +90,7 @@ const Sidebar = ({ setActiveView }) => {
           <IconCaretRightFilled size={15} />
         )}
         hobbies
-      </a>
+      </button>
     </aside>
   );
 };
