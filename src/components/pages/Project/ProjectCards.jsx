@@ -3,8 +3,8 @@ import { projectCards } from '../../../constants/AllData';
 
 const ProjectCards = () => {
   return (
-    <section className="h-full w-full overflow-y-auto py-10">
-      <div className="m-4 grid sm:grid-cols-2 sm:gap-10 lg:gap-0">
+    <section className="h-full w-full overflow-y-auto py-10 lg:text-lg">
+      <div className="mx-16 grid md:mx-6 md:grid-cols-2 md:gap-8 lg:gap-0">
         {projectCards.map((item) => {
           return (
             <div>

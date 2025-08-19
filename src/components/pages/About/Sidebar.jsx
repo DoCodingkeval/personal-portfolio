@@ -11,7 +11,7 @@ import {
 
 const Sidebar = ({ setActiveView }) => {
   const [info, setInfo] = useState(false);
-  const [educationOpen, setEducationOpen] = useState(true);
+  const [educationOpen, setEducationOpen] = useState(false);
   const [hobbiesOpen, setHobbiesOpen] = useState(false);
 
   return (

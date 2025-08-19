@@ -35,7 +35,7 @@ const Header = () => {
       <nav className="flex h-full w-full items-center justify-between text-white/80">
         <Link
           to="/"
-          className="font-fira pl-4 text-sm whitespace-nowrap lg:w-1/4 xl:text-[1rem]"
+          className="font-fira pl-4 whitespace-nowrap lg:w-1/4 lg:text-lg"
         >
           keval-gohel
         </Link>
@@ -66,14 +66,14 @@ const Header = () => {
               <motion.li
                 key={index}
                 variants={itemVariants}
-                className={`border border-[var(--border-primary)] py-2 pl-4 leading-10 capitalize transition duration-300 first:pt-4 hover:text-[#00f0ff] lg:border-t-0 lg:border-b-0 lg:py-1 lg:pl-0 lg:text-xs lg:first:hidden lg:last:ml-auto xl:text-sm xl:last:border-r-0`}
+                className={`border border-[var(--border-primary)] py-2 pl-4 leading-10 capitalize transition duration-300 first:pt-4 hover:text-[#00f0ff] lg:border-t-0 lg:border-b-0 lg:py-1 lg:pl-0 lg:first:hidden lg:last:ml-auto xl:text-sm xl:last:border-r-0`}
               >
                 <NavLink
                   to={`/${item.path}`}
                   className={({ isActive }) =>
                     isActive
-                      ? 'active-link py-4 lg:px-8 lg:text-center'
-                      : 'lg:px-8 lg:text-center'
+                      ? 'active-link py-4 lg:px-8 lg:text-center lg:text-[1rem]'
+                      : 'lg:px-8 lg:text-center lg:text-[1rem]'
                   }
                   onClick={() => {
                     setMenu(false);

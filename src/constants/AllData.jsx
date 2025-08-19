@@ -1,14 +1,3 @@
-import html from '/assets/html.svg';
-import css from '/assets/css.svg';
-import js from '/assets/javascript.png';
-import react from '/assets/reactjs.png';
-import bootstrap from '/assets/bootstrap.svg';
-import mysql from '/assets/mysql.svg';
-import vite from '/assets/vite.svg';
-import sass from '/assets/sass.svg';
-import tailwind from '/assets/tailwind.png';
-import git from '/assets/git.png';
-
 const navLinks = [
   {
     link: '# navigate:',
@@ -38,43 +27,35 @@ const navLinks = [
 const skillsStack = [
   {
     name: 'HTML 5',
-    icon: html,
+    icon: '/assets/html.svg',
   },
   {
     name: 'CSS 3',
-    icon: css,
+    icon: '/assets/css.svg',
   },
   {
     name: 'JavaScript',
-    icon: js,
+    icon: 'assets/javascript.png',
   },
   {
     name: 'React JS',
-    icon: react,
+    icon: '/assets/reactjs.png',
   },
   {
     name: 'Tailwind CSS',
-    icon: tailwind,
-  },
-  {
-    name: 'Vite JS',
-    icon: vite,
+    icon: '/assets/tailwind.png',
   },
   {
     name: 'BootStrap',
-    icon: bootstrap,
+    icon: '/assets/bootstrap.svg',
   },
   {
     name: 'Sass',
-    icon: sass,
-  },
-  {
-    name: 'mysql',
-    icon: mysql,
+    icon: '/assets/sass.svg',
   },
   {
     name: 'Git',
-    icon: git,
+    icon: '/assets/git.png',
   },
 ];
 
